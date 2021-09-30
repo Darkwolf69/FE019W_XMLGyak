@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE orarend SYSTEM "FA_orarend.dtd">
+<orarend>
+	<ora id="1" tipus="levelezo">
+		<targy>XML</targy>
+		<idopont nap="2021.09.24" tol="12:30" ig="15:50"/>
+		<helyszin>info_epulet</helyszin>
+		<oktato>Bednarik_Laszlo</oktato>
+		<szak>mernokInformatikus</szak>
+	</ora>
+	<ora id="2" tipus="levelezo">
+		<targy>XML</targy>
+		<idopont nap="2021.10.01" tol="12:30" ig="15:50"/>
+		<helyszin>info_epulet</helyszin>
+		<oktato>Bednarik_Laszlo</oktato>
+		<szak>mernokInformatikus</szak>
+	</ora>
+	<ora id="3" tipus="levelezo">
+		<targy>XML</targy>
+		<idopont nap="2021.11.19" tol="12:30" ig="15:50"/>
+		<helyszin>info_epulet</helyszin>
+		<oktato>Bednarik_Laszlo</oktato>
+		<szak>mernokInformatikus</szak>
+	</ora>
+	<ora id="4" tipus="levelezo">
+		<targy>XML</targy>
+		<idopont nap="2021.11.26" tol="16:00" ig="19:30"/>
+		<helyszin>info_epulet</helyszin>
+		<oktato>Bednarik_Laszlo</oktato>
+		<szak>mernokInformatikus</szak>
+	</ora>
+</orarend>
