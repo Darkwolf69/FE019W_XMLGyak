@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<konferencia cim="IT konferencia" helyszin="Miskolc" datum="2021.09.29">
+	<hallgatok>
+		<hallgato nev="Hallgato Hugo" lakcim="Miskolc"/>
+		<hallgato nev="Tanulo Tamas" lakcim="Miskolctapolca"/>
+	</hallgatok>
+	<eloado nev="Informatikus Imre" adoszam="696969696" lakcim="Miskolc"/>
+	<eloado nev="Hekker Hedvig" adoszam="010101010" lakcim="Miskolc"/>
+</konferencia>
