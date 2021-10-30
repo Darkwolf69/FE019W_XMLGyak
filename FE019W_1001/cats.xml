@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <!DOCTYPE cats SYSTEM "cats.dtd"> -->
+<cats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://iit.uni-miskolc.hu FA_jegyzet.xsd">
+	<cat id="x1">
+		<name>Kokusz</name>
+		<age>3</age>
+		<breed>Perzsa</breed>
+	</cat>
+	<cat id="x2">
+		<name>Napsugar</name>
+		<age>2</age>
+		<breed>Sziami</breed>
+	</cat>
+	<cat id="x3">
+		<name>Lucifer</name>
+		<age>3</age>
+		<breed>Oroszkek</breed>
+	</cat>
+</cats>

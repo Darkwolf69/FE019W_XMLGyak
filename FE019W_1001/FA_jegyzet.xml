@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <!DOCTYPE jegyzet SYSTEM "FA_jegyzet.dtd"> -->
+<jegyzet
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://iit.uni-miskolc.hu FA_jegyzet.xsd">
+	<to>Adam</to>
+	<from>Kate</from>
+	<heading>Emlekezteto</heading>
+	<body>Ne felejtsd el, amit megbeszéltünk!</body>
+</jegyzet>

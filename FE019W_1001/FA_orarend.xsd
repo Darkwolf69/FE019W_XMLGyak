@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://iit.uni-miskolc.hu"
+	xmlns="http://iit.uni-miskolc.hu"
+	elementFormDefault="qualified">
+
+<xs:complexType name="orarend">
+  <xs:sequence>
+    <xs:element name="ora"/>
+  </xs:sequence>
+</xs:complexType>
+<xs:attribute name="id" type="xs:integer"/>
+<xs:attribute name="tipus" type="xs:string"/>
+
+<xs:complexType name="idopont">
+	<xs:attribute name="nap" type="xs:date"/>
+	<xs:attribute name="tol" type="xs:time"/>
+	<xs:attribute name="ig" type="xs:time"/>
+</xs:complexType>
+
+<xs:complexType name="ora">
+  <xs:complexContent>
+    <xs:extension base="orarend">
+      <xs:sequence>
+        <xs:element name="targy" type="xs:string"/>
+       	<xs:element name="idopont" type="idopont"/>
+        <xs:element name="helyszin" type="xs:string"/>
+        <xs:element name="oktato" type="xs:string"/>
+        <xs:element name="szak" type="xs:string"/>
+      </xs:sequence>
+    </xs:extension>
+  </xs:complexContent>
+</xs:complexType>
+
+</xs:schema>

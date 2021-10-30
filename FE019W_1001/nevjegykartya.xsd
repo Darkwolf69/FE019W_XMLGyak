@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://iit.uni-miskolc.hu"
+	xmlns="http://iit.uni-miskolc.hu" elementFormDefault="qualified">
+
+	<xs:complexType name="nevjegykartyak">
+		<xs:sequence>
+			<xs:element name="nevjegykartya" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="cegkomplex">
+		<xs:sequence>
+			<xs:element name="cim" type="cimkomplex" />
+			<xs:element name="nev" />
+			<xs:element name="telefonszam" />
+			<xsd:complexType>
+				<xsd:attribute name="korzet" type="xsd:integer" use="required" />
+			</xsd:complexType>
+			<xs:element name="weblap" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="cimkomplex">
+		<xs:sequence>
+			<xs:element name="iranyitoszam" />
+			<xs:element name="varos" />
+			<xs:element name="utca" />
+			<xs:element name="hazszam" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:element name="nevjegykartya">
+		<xs:complexType mixed="true">
+			<xs:sequence>
+				<xs:element name="nev" type="xs:string" />
+				<xs:element name="ceg" type="cegkomplex" />
+				<xs:element name="beosztas" type="xs:string" />
+				<xs:element name="telefonszam" type="xs:string" />
+				<xsd:complexType>
+					<xsd:attribute name="korzet" type="xsd:integer" use="required" />
+				</xsd:complexType>
+				<xs:element name="email" type="xs:string" />
+			</xs:sequence>
+			<xs:attribute name="id" type="xs:integer" use="required" />
+		</xs:complexType>
+	</xs:element>
+
+</xs:schema>

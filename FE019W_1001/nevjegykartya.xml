@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nevjegykartyak
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://iit.uni-miskolc.hu nevjegykartya.xsd">
+	<nevjegykartya id="1">
+		<nev>Teszt Elek</nev>
+		<ceg>
+			<cim>
+				<iranyitoszam>3500</iranyitoszam>
+				<varos>Miskolc</varos>
+				<utca>Hosszu</utca>
+				<hazszam>10</hazszam>
+			</cim>
+			<nev>Hekker Kft.</nev>
+			<telefonszam korzet="30">2345678</telefonszam>
+			<weblap>hekker.hu</weblap>
+		</ceg>
+		<beosztas>senior Java developer</beosztas>
+		<telefonszam korzet="30">2222222</telefonszam>
+		<email>tesztelek@tesztmail.com</email>
+	</nevjegykartya>
+	<nevjegykartya id="2">
+		<nev>Szikla Szilárd</nev>
+		<ceg>
+			<cim>
+				<iranyitoszam>3500</iranyitoszam>
+				<varos>Miskolc</varos>
+				<utca>Rövid</utca>
+				<hazszam>6</hazszam>
+			</cim>
+			<nev>Finom etterem</nev>
+			<telefonszam korzet="70">6666666</telefonszam>
+			<weblap></weblap>
+		</ceg>
+		<beosztas>foszakacs</beosztas>
+		<telefonszam korzet="20">7777777</telefonszam>
+		<email>sziklaszilard@finom.hu</email>
+	</nevjegykartya>
+</nevjegykartyak>

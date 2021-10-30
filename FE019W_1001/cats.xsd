@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://iit.uni-miskolc.hu"
+	xmlns="http://iit.uni-miskolc.hu"
+	elementFormDefault="qualified">
+
+<xs:complexType name="cats">
+  	<xs:sequence>
+    	<xs:element name="cat" type="cat"/>
+   	</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="cat">
+	<xs:sequence>
+		<xs:element name="name" type="xs:string"/>
+		<xs:element name="age" type="xs:integer"/>
+		<xs:element name="breed" type="xs:string"/>
+	</xs:sequence>
+	<xs:attribute name="id" type="xs:integer" use="required"/>
+</xs:complexType>
+
+</xs:schema>
