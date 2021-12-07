@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://iit.uni-miskolc.hu"
+	xmlns="http://iit.uni-miskolc.hu" elementFormDefault="qualified">
+	
+	<xs:element name="pizzazo">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="megrendelo" />
+				<xs:element name="futar" />
+				<xs:element name="pizza" />
+				<xs:element name="szakacs" />
+				<xs:element name="belepokartya" />
+				<xs:element name="osszetevo" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="megrendelo">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="nev" />
+				<xs:element name="telefonszam" />
+				<xs:element name="lakcim" type="cimkomplex" />
+			</xs:sequence>
+			<xs:attribute name="mkod" type="xs:integer" use="required" />
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="futar">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="telefonszam" />
+				<xs:element name="nev" />
+				<xs:element name="eletkor" type="xs:integer"/>
+				<xs:element name="robogoTipus" />
+			</xs:sequence>
+			<xs:attribute name="fkod" type="xs:integer" use="required" />
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="pizza">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="fajta" />
+				<xs:element name="meret" />
+				<xs:element name="ar" type="xs:integer"/>
+			</xs:sequence>
+			<xs:attribute name="pkod" type="xs:integer" use="required" />
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="szakacs">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="nev" />
+				<xs:element name="eletkor" />
+				<xs:element name="kepesites" />
+			</xs:sequence>
+			<xs:attribute name="szkod" type="xs:integer" use="required" />
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="belepokartya">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="azonosito" type="xs:integer"/>
+				<xs:element name="kiadasEve" />
+				<xs:element name="lejaratEve" />
+			</xs:sequence>
+			<xs:attribute name="bkod" type="xs:integer" use="required" />
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="osszetevo">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="elelmiszer" type="elelemkomplex"/>
+			</xs:sequence>
+			<xs:attribute name="okod" type="xs:integer" use="required" />
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="szukseges">
+		<xs:complexType>
+			<xs:attribute name="pkod" type="xs:integer" use="required"/>
+			<xs:attribute name="okod" type="xs:integer" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:complexType name="cimkomplex">
+		<xs:sequence>
+			<xs:element name="iranyitoszam" />
+			<xs:element name="varos" />
+			<xs:element name="utca" />
+			<xs:element name="hazszam" />
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="elelemkomplex">
+		<xs:sequence>
+			<xs:element name="nev" />
+			<xs:element name="tipus" />
+			<xs:element name="tomeg" />
+			<xs:element name="lejarat" />
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>
